@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/dino-theme.min.css" rel="stylesheet" href="css/mi estilo.css">
+
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/T-Rex-Head.png" width="82" height="82">
+    </div>
+    <div id="vista" align="center">
+<img  id="full_rex" src="imagenes/T-Rex-View.png" width="300" height="168" >
+    </div>
+
+	<audio id="roar" preload="auto" src="audio/roar.mp3">
+       </audio>
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="a">
+        
+	<div data-role="header" data-position="fixed">
+		<h1>Dinosaurios</h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="myapp-rex" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p> Todos aquellos animales que existieron en la tierra antes de que el hombre comenzara a mantener un registro de sus historia, se llaman "prehistoricos". Estos incluyen las primeras señales de vida, 600 millones de años atrás, peces prehistoricos, dinosaurios y desde luego ¡El hombre!.
+      </p>
+      <div align="center">
+<img src="imagenes/Chart.png" width="363" height="464">
+</div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+
+	</div>
+    
+<!-- Panel Menu  -->
+<!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="Rex" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Tyrannosaurus rex</h1>
+                <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/Tyrannosaurus.png" width="382" height="186">
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+
+    </body>
+
+</html>
